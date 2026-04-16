@@ -13,4 +13,7 @@ new_df_subset = new_df[['First Name', 'Last Name', 'Title', 'Company Name', 'Ema
 new_df_subset = new_df_subset[new_df_subset['Email'].notna() & (new_df_subset['Email'].str.strip() != '')]
 
 # export to csv where TK represents name of file before .csv extension
-new_df_subset.to_csv('TK', index=False)
+# Mac
+new_df_subset.to_csv('/Users/arkosamad/Downloads/TK', index=False)
+# Windows 
+new_df_subset.to_csv(r'C:\Users\arkosamad\Downloads\TK', index=False)
